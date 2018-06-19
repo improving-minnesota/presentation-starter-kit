@@ -2,6 +2,8 @@
 
 A presentation starter kit to get up and running with an OPi branded presentation quicky and easily. Also see [workshop-starter-kit][workshop-starter-kit].
 
+![Example](./demo/presentation.png)
+
 ## Set up
 
 1. Clone this repo
@@ -45,5 +47,5 @@ As static content, you can use whatever you please to host the resulting present
 
 This will get you a free, statically hosted presentation with a friendly URL in front of it that can be easily shared to training attendees. 🎉 You can easily put a CNAME in front of your hosting provider to redirect to your own URL, if desired.
 
-[workshop-starter-kit]: https://github.com/objectpartners/TODO
+[workshop-starter-kit]: https://github.com/objectpartners/workshop-starter-kit
 [netlify]: https://netlify.com
