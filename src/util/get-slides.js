@@ -45,15 +45,16 @@ export function getSlides() {
       if (slide.indexOf) {
         let sections = [];
         if (slide.indexOf('<section>') !== -1) {
-          sections = slide
-            .replace(/\<section\>/g, '')
-            .split('</section>');
+          sections = slide.replace(/\<section\>/g, '').split('</section>');
           Array.prototype.push.apply(newSlides[index], sections);
         } else if (slide.indexOf('<hr>')) {
           sections = slide.split('<hr>');
         }
 
-        Array.prototype.push.apply(newSlides[index], sections.filter(section => section.length > 0));
+        Array.prototype.push.apply(
+          newSlides[index],
+          sections.filter(section => section.length > 0)
+        );
       } else {
         newSlides[index].push(slide);
       }
